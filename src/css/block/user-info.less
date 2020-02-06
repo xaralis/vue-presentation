@@ -1,11 +1,21 @@
 @import "../variables";
 
 .user-info {
+  position: relative;
+
   &__photo {
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,.75);
     border: @photo-border-width @photo-border-style #fff;
     max-width: @photo-width;
     border-radius: @photo-border-radius;
+  }
+
+  &__fraga {
+    position: absolute;
+    left: 50%;
+    top: @photo-width - 30px;
+    margin-left: 3%;
+    width: 50px;
   }
 
   &__name {
