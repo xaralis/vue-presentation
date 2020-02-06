@@ -1,10 +1,28 @@
 import Highcharts from 'highcharts/highcharts';
+import reveal from 'reveal.js';
+
+Highcharts.wrap(Highcharts.Pointer.prototype, 'normalize', function (proceed, e) {
+  const result = proceed.call(this, e);
+  const zoom = reveal.getScale();
+
+  if (zoom > 1) {
+    const positionX = result.pageX - result.chartX;
+    const positionY = result.pageY - result.chartY;
+    result.chartX = Math.round((e.pageX - (positionX * zoom)) / zoom);
+    result.chartY = Math.round((e.pageY - (positionY * zoom)) / zoom);
+  } else {
+    result.chartX = Math.round(result.chartX / zoom);
+    result.chartY = Math.round(result.chartY / zoom);
+  }
+
+  return result;
+});
 
 Highcharts.chart('star-chart-container', {
   chart: {
     type: 'spline',
-    width: 900,
-    backgroundColor: null,
+    width: 1000,
+    // backgroundColor: null,
   },
   title: {
     text: '',
@@ -12,7 +30,7 @@ Highcharts.chart('star-chart-container', {
   xAxis: {
     type: 'datetime',
     title: {
-      text: 'Date',
+      text: 'Datum',
     },
   },
   yAxis: {
@@ -30,7 +48,7 @@ Highcharts.chart('star-chart-container', {
         },
       },
       marker: {
-        enabled: false,
+        enabled: true,
       },
     },
   },
