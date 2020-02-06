@@ -38,36 +38,46 @@
             </div>
         </section>
         <section>
-            <div class="block-user-info">
-                <img class="user-info__photo" src="static/images/photo-evan-you.jpeg" alt="">
-                <div class="user-info__name">
-                    Evan You
-                </div>
-                <div class="user-info__position">Tvůrce <a href="https://vuejs.org/" target="_blank">@Vue.js</a></div>
-                <div class="user-info__position">Core Dev frameworku Meteor</div>
-                <div class="user-info__position">Pracoval jako Creative Technologist v Googlu</div>
-                <div class="user-info__position">Od roku 2016 full-time vyvíjí Vue.js</div>
-                <div class="user-info__social">
-                    <a href="https://twitter.com/youyuxi" target="_blank" class="twitter">Twitter</a>
-                    <a href="https://github.com/yyx990803/" target="_blank" class="github">Github</a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="history">
-                <h2>Historie</h2>
+            <section data-background-color="#ea272e">
+                <h2>Úplně základní informace o Vue.js</h2>
                 <ul>
-                    <li class="fragment">Vznik v roce 2013</li>
-                    <li class="fragment">První release v únoru 2014 (v0.6)</li>
-                    <li class="fragment">v1.0.0 v roce 2015</li>
-                    <li class="fragment">Poslední release v2.6.11 v prosinci 2019</li>
+                    <li>JS frontendový framework</li>
+                    <li>Mladší než React a Angular</li>
+                    <li>O hodně mladší než jQuery</li>
                 </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Popularita</h2>
-            <small>GitHub stars</small>
-            <div id="star-chart-container"></div>
+            </section>
+            <section>
+                <h2>Autor Vue.js</h2>
+                <div class="block-user-info">
+                    <img class="user-info__photo" src="static/images/photo-evan-you.jpeg" alt="">
+                    <div class="user-info__name">
+                        Evan You
+                    </div>
+                    <div class="user-info__position">Core Dev frameworku Meteor</div>
+                    <div class="user-info__position">Pracoval jako Creative Technologist v Googlu</div>
+                    <div class="user-info__position">Od roku 2016 full-time vyvíjí Vue.js</div>
+                    <div class="user-info__social">
+                        <a href="https://twitter.com/youyuxi" target="_blank" class="twitter">Twitter</a>
+                        <a href="https://github.com/yyx990803/" target="_blank" class="github">Github</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="history">
+                    <h2>Historie</h2>
+                    <ul>
+                        <li class="fragment">Vznik v roce 2013</li>
+                        <li class="fragment">První release v únoru 2014 (v0.6)</li>
+                        <li class="fragment">v1.0.0 v roce 2015</li>
+                        <li class="fragment">Poslední release v2.6.11 v prosinci 2019</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>Popularita</h2>
+                <small>GitHub stars</small>
+                <div id="star-chart-container"></div>
+            </section>
         </section>
         <section>
             <section>
@@ -86,7 +96,7 @@
             <section>
                 <h2>Další informace</h2>
                 <ul>
-                    <li>Progresivní framework</li>
+                    <li>Progresivní framework (bindingy pomocí rozšíření HTML syntaxe)</li>
                     <li>Založený na komponentách</li>
                     <li>Inspirace staršími frameworky, převzal to nejlepší z Angularu i Reactu</li>
                 </ul>
@@ -102,14 +112,6 @@
                         <th>Velikost</th>
                     </tr>
                     <tr>
-                        <td>React + react-dom</td>
-                        <td>34.4 kB (gzipped)</td>
-                    </tr>
-                    <tr>
-                        <td>Angular</td>
-                        <td>62.2 kB (gzipped)</td>
-                    </tr>
-                    <tr>
                         <td><strong>Vue.js</strong></td>
                         <td><strong>
                             23.8 kB (gzipped)
@@ -119,11 +121,19 @@
                         <td>jquery</td>
                         <td>31.1 kB (gzipped)</td>
                     </tr>
+                    <tr>
+                        <td>React + react-dom</td>
+                        <td>34.4 kB (gzipped)</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>62.2 kB (gzipped)</td>
+                    </tr>
                     </table>
             </section>
             <section>
                 <h2>Jednoduchý na pochopení</h2>
-                <small>Základní použití Vue.js se lze z nuly naučit za dvě hodiny</small>
+                <small>Základní mechanismy Vue.js se lze z nuly naučit za dvě hodiny</small>
                 <pre class="code"><code class="lang-html">
 &lt;template&gt;
     &lt;div class=&quot;example&quot;&gt;{{ msg }}&lt;/div&gt;
@@ -195,7 +205,7 @@
             </section>
             <section>
                 <h2>Přehledný ekosystém</h2>
-                <small>Základní pluginy vyvíjí core team. Na nejpozdstatnější věci existuje <em>pouze jedno</em> komunitou využívané řešení.</small>
+                <small>Základní pluginy vyvíjí core team. Na nejpodstatnější věci existuje <em>pouze jedno</em> komunitou využívané řešení.</small>
                 <br>
                 <br>
                 <ul class="fragment">
@@ -250,14 +260,14 @@
             <h2>Kdo to používá?</h2>
             <ul>
                 <li><a href="https://about.gitlab.com/" target="_blank">GitLab</a> - VCS provider</li>
-                <li><a href="https://about.gitlab.com/" target="_blank">Netflix</a> - on-demand video provider (bohužel jen interní aplikace)</li>
+                <li><a href="https://about.gitlab.com/" target="_blank">Netflix</a> - on-demand video provider (prozatím jen interní aplikace)</li>
                 <li><a href="https://www.behance.net/" target="_blank">Behance</a> - portál pro designéry</li>
                 <li><a href="https://www.baidu.com/" target="_blank">Baidu</a> - vyhledávač (druhý největší po Googlu)</li>
                 <li><a href="https://www.alibaba.com/" target="_blank">Alibaba</a> - B2B platforma</li>
             </ul>
         </section>
         <section>
-            <section>
+            <section data-background-color="#ea272e">
                 <h2>Jak Vue.js funguje?</h2>
             </section>
             <section>
@@ -280,7 +290,7 @@
                 <img src="static/images/reactivity.png" alt="">
             </section>
         </section>
-        <section>
+        <section data-background-color="#ea272e">
             <h2>Jak se Vue.js používá?</h2>
         </section>
         <section>
@@ -349,7 +359,7 @@
         </section>
         <section>
             <section>
-                <h2>Vypočítané properties a watchery</h2>
+                <h2>Vypočítané proměnné a watchery</h2>
             </section>
             <section>
                 <h2>Watch</h2>
@@ -374,7 +384,7 @@ var vm = new Vue({
                 </code></pre>
             </section>
             <section>
-                <h2>Vypočítanné proměnné</h2>
+                <h2>Vypočítané proměnné</h2>
                 <small>Deklarace proměnné na základě její závislosti na jiných proměnných, automatická reaktivita. Preferované řešení pro odvozené proměnné.</small>
                 <pre class="code"><code class="lang-html">
 &lt;div id="demo"&gt;{{ fullName }}&lt;/div&gt;
@@ -458,7 +468,7 @@ data: {
             <h2>Cykly</h2>
             <pre class="code"><code class="lang-html">
 &lt;ul id=&quot;example-1&quot;&gt;
-  &lt;!-- Použít :key se doporučuje pro lepší výkon. --&gt;
+  &lt;!-- :key se doporučuje pro lepší výkon a menší šanci udělat chybu --&gt;
   &lt;li v-for=&quot;item in items&quot; :key=&quot;item.message&quot;&gt;{{ item.message }}&lt;/li&gt;
 &lt;/ul&gt;
             </code></pre>
@@ -549,14 +559,10 @@ export default {
             </code></pre>
         </section>
         <section>
-            <h2>Další věci ...</h2>
-            <a href="https://vuejs.org/v2/guide/">https://vuejs.org/v2/guide/</a>
-        </section>
-        <section>
             <section>
                 <h2>Vuex</h2>
                 <ul>
-                    <li>Řešení pro state management</li>
+                    <li>Řešení pro state management z dílny core týmu</li>
                     <li>Inspirace Reduxem známým z Reactu</li>
                 </ul>
             </section>
@@ -571,11 +577,109 @@ export default {
             </section>
         </section>
         <section>
-            <h2>Dev tools</h2>
-            <small>Extension pro Chrome</small>
-            <img style="height: 40vh;" src="static/images/devtool.png" alt="">
+            <section>
+                <h2>vue-router</h2>
+                <ul>
+                    <li>Zpřístupňuje navigaci pro SPA aplikace</li>
+                    <li>Perfektní integrace, de-facto routing řešení vyvíjené core týmem</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Základní konfigurace</h2>
+                <pre class="code"><code class="lang-javascript">
+// Komponenty
+const Foo = { template: '&lt;div&gt;foo&lt;/div&gt;' }
+const User = { template: '&lt;div&gt;user&lt;/div&gt;' }
+
+// Jednotlivé routy
+const routes = [
+  { path: '/foo', name: 'foo', component: Foo },
+  { path: '/user/:userId', name: 'user', component: User }
+]
+
+// Instance routeru
+const router = new VueRouter({ routes })
+
+// Root instance Vue
+const app = new Vue({ router }).$mount('#app')
+            </code></pre>
+            </section>
+            <section>
+                <h2>Navigace</h2>
+                <pre class="code"><code class="lang-javascript">
+// bez parametrů
+router.push('foo')
+// s parametry
+router.push({ name: 'user', params: { userId: '123' } })
+// s query stringem: /foo?param=value
+router.push({ name: 'foo', query: { param: 'value' } })
+            </code></pre>
+            </section>
         </section>
         <section>
+            <section>
+                <h2>vue-cli</h2>
+                <small>Jednoduchý scaffolding nástroj</small>
+            </section>
+            <section>
+                <h2>Vytvoření nového projektu</h2>
+                <pre class="code"><code class="lang-bash">
+npm install -g @vue/cli
+vue create my-project
+            </code></pre>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="static/images/cli-new-project.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <img src="static/images/cli-select-features.png" alt="">
+                </div>
+            </div>
+            </section>
+            <section>
+                <h2>Vytvoření nového projektu pomocí GUI</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <pre class="code"><code class="lang-bash">
+vue ui
+                        </code></pre>
+                    </div>
+                    <div class="col-md-9">
+                        <img src="static/images/ui-new-project.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>vue-cli-service</h2>
+                <small>Po vytvoření projektu nabízí řadu hotových příkazů bez nutnosti další konfigurace</small>
+                <pre class="code"><code class="lang-bash">
+serve               start development server
+build               build for production
+inspect             inspect internal webpack config
+test:e2e            run e2e tests with Cypress
+lint                lint and fix source files
+test:unit           run unit tests with jest
+                    </code></pre>
+            </section>
+        </section>
+        <section>
+            <h2>DevTools</h2>
+            <small>Chrome extension pro inspekci běžící Vue aplikace</small>
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li>vue-router</li>
+                        <li>vuex</li>
+                        <li>výkon</li>
+                        <li>component browser</li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <img style="height: 40vh;" src="static/images/devtool.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section data-background-color="#ea272e">
             <h1>Q&amp;As?</h1>
             <h2>Díky za pozornost</h2>
         </section>

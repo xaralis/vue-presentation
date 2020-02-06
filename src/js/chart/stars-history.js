@@ -21,7 +21,7 @@ Highcharts.wrap(Highcharts.Pointer.prototype, 'normalize', function (proceed, e)
 Highcharts.chart('star-chart-container', {
   chart: {
     type: 'spline',
-    width: 1000,
+    width: 960,
     // backgroundColor: null,
   },
   title: {
