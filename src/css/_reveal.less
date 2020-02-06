@@ -1,0 +1,73 @@
+@import "variables";
+
+section.has-light-background {
+  background: @dark-background;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: @dark-background-header-color;
+  }
+}
+
+body {
+  background: @light-background;
+  font-family: @font-family;
+  color: @light-background-body-color;
+}
+
+.reveal {
+  font-family: @font-family;
+
+  a {
+    color: @link-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: @link-color-hover;
+      text-decoration: none;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 20px 0;
+    color: @light-background-header-color;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-shadow: none;
+    word-wrap: break-word;
+    font-family: @header-font-family;
+    text-transform: none;
+  }
+
+  .controls {
+    color: @controls-color;
+  }
+
+  .progress {
+    background: rgba(0, 0, 0, 0.2);
+    color: @progress-color;
+  }
+
+  .progress span {
+    -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  }
+
+  section {
+    img {
+      box-shadow: none;
+      border: none;
+      background: none;
+    }
+  }
+}
