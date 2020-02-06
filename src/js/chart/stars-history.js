@@ -57,6 +57,8 @@ Highcharts.chart('star-chart-container', {
         [Date.UTC(2018, 3, 22), 94139],
         [Date.UTC(2018, 5, 18), 102664],
         [Date.UTC(2018, 6, 27), 107351],
+        [Date.UTC(2019, 8, 28), 135207],
+        [Date.UTC(2020, 2, 6), 143341],
       ],
     },
     {
@@ -80,6 +82,8 @@ Highcharts.chart('star-chart-container', {
         [Date.UTC(2018, 3, 22), 35354],
         [Date.UTC(2018, 5, 18), 37364],
         [Date.UTC(2018, 6, 27), 38879],
+        [Date.UTC(2019, 8, 28), 50756],
+        [Date.UTC(2020, 2, 6), 57222],
       ],
     },
     {
@@ -104,6 +108,8 @@ Highcharts.chart('star-chart-container', {
         [Date.UTC(2018, 3, 22), 91782],
         [Date.UTC(2018, 5, 18), 102672],
         [Date.UTC(2018, 6, 27), 108834],
+        [Date.UTC(2019, 8, 28), 147021],
+        [Date.UTC(2020, 2, 6), 156539],
       ],
     },
   ],

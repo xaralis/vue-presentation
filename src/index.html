@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vue Presentation</title>
+    <title>Vue.js</title>
 </head>
 <body>
 <div class="reveal">
     <div class="slides">
         <section>
             <div class="block-user-info">
-                <img class="user-info__photo" src="static/images/photo-igor-ognichenko.jpg" alt="">
+                <img class="user-info__photo" src="static/images/photo-filip-varecha.jpg" alt="">
                 <div class="user-info__name">
-                    Igor Ognichenko
+                    Filip Vařecha
                 </div>
-                <div class="user-info__position">Full-stack JavaScript Developer</div>
+                <div class="user-info__position">Full-stack developer <a href="https://fragaria.cz/" target="_blank">@Fragaria</a></div>
                 <div class="user-info__social">
-                    <a href="https://twitter.com/Robin_ck" target="_blank" class="twitter">Twitter</a>
-                    <a href="https://github.com/RobinCK" target="_blank" class="github">Github</a>
-                    <a href="https://www.linkedin.com/in/igor-ognichenko/" target="_blank" class="linkedin">LinkedIn</a>
+                    <a href="https://github.com/xaralis" target="_blank" class="github">Github</a>
+                    <a href="https://www.facebook.com/filip.varecha" target="_blank" class="facebook">Facebook</a>
+                    <a href="https://www.linkedin.com/in/filip-varecha/" target="_blank" class="linkedin">LinkedIn</a>
                 </div>
             </div>
         </section>
-        <section data-background-color="#ffffff">
+        <section>
             <div class="vue-logo">
                 <svg class="vue-logo__svg" width="256px" height="221px" viewBox="0 0 256 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                     <g>
@@ -33,7 +33,7 @@
                     </g>
                 </svg>
                 <br>
-                <h3 class="vue-logo__title">Vue.JS</h3>
+                <h3 class="vue-logo__title">Úvod do Vue.JS</h3>
             </div>
         </section>
         <section>
@@ -42,10 +42,10 @@
                 <div class="user-info__name">
                     Evan You
                 </div>
-                <div class="user-info__position">Creator <a href="https://vuejs.org/" target="_blank">@Vue.js</a></div>
-                <div class="user-info__position">Core Dev at Meteor</div>
-                <div class="user-info__position">Previously worked as a Creative Technologist at Google</div>
-                <div class="user-info__position">From 2016 working full-time on Vue.JS framework.</div>
+                <div class="user-info__position">Tvůrce <a href="https://vuejs.org/" target="_blank">@Vue.js</a></div>
+                <div class="user-info__position">Core Dev frameworku Meteor</div>
+                <div class="user-info__position">Pracoval jako Creative Technologist v Googlu</div>
+                <div class="user-info__position">Od roku 2016 full-time vyvíjí Vue.JS.</div>
                 <div class="user-info__social">
                     <a href="https://twitter.com/youyuxi" target="_blank" class="twitter">Twitter</a>
                     <a href="https://github.com/yyx990803/" target="_blank" class="github">Github</a>
@@ -54,20 +54,21 @@
         </section>
         <section>
             <div class="history">
-                <h2>History</h2>
+                <h2>Historie</h2>
                 <ul>
-                    <li class="fragment">Started in late 2013</li>
-                    <li class="fragment">First release Feb. 2014 (v0.6)</li>
-                    <li class="fragment">v1.0.0 Evangelion Oct. 2015</li>
-                    <li class="fragment">Latest release v2.5.16</li>
+                    <li class="fragment">Vznik v roce 2013</li>
+                    <li class="fragment">První release v únoru 2014 (v0.6)</li>
+                    <li class="fragment">v1.0.0 v roce 2015</li>
+                    <li class="fragment">Poslední release v2.6.11 v prosinci 2019</li>
                 </ul>
             </div>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Stars</h2>
+        <section>
+            <h2>Popularita</h2>
+            <small>GitHub stars</small>
             <div id="star-chart-container"></div>
         </section>
-        <section data-background-color="#ffffff">
+        <section>
             <section>
                 <h2>Web Frameworks Benchmark</h2>
                 <h4>Round 7</h4>
@@ -75,41 +76,41 @@
             </section>
             <section>
                 <h2>Swap Rows</h2>
-                <h5>Time to swap 2 rows on a 1K table. (with 5 warmup iterations).</h5>
+                <h5>Výměna 2 řádků na tabulce s 1K řádků (s 5ti warmup iteracemi).</h5>
                 <div id="swap-rows-chart-container"></div>
             </section>
             <section>
                 <h2>Partial Update</h2>
-                <h5>Time to update the text of every 10th row (with 5 warmup iterations) for a table with 10k rows.</h5>
+                <h5>Čas na update textu pro každý 10tý řádek (s 5ti warmup iteracemi) v tabulce s 10k řádků.</h5>
                 <div id="partial-update-chart-container"></div>
             </section>
             <section>
                 <h2>Remove Row</h2>
-                <h5>Duration to remove a row. (with 5 warmup iterations).</h5>
+                <h5>Čas na odstranění řádku (s 5ti warmup iteracemi).</h5>
                 <div id="remove-row-chart-container"></div>
             </section>
             <section>
                 <h2>Select Row</h2>
-                <h5>Duration to highlight a row in response to a click on the row. (with 5 warmup iterations).</h5>
+                <h5>Doba na highlight řádku v po kliku na řádek (s 5ti warmup iteracemi).</h5>
                 <div id="select-row-chart-container"></div>
             </section>
             <section>
                 <h2>Append Rows To Large Table</h2>
-                <h5>Duration for adding 1000 rows on a table of 10,000 rows.</h5>
+                <h5>Doba na přidání 1000 řádků v tabulce s 10K řádky.</h5>
                 <div id="append-rows-to-large-table-chart-container"></div>
             </section>
             <section>
                 <h2>Create Rows</h2>
-                <h5>Duration for creating 1000 rows after the page loaded.</h5>
+                <h5>Vytvoření 1000 řádků po načtení stránky.</h5>
                 <div id="create-rows-chart-container"></div>
             </section>
             <section>
-                <h2>Replace All Rows</h2>
-                <h5>Duration for updating all 1000 rows of the table (with 5 warmup iterations).</h5>
+                <h2>Výměna všech řádků</h2>
+                <h5>Doba updatu všech 1000 řádků tabulky (s 5ti warmup iteracemi).</h5>
                 <div id="replace-all-rows-chart-container"></div>
             </section>
             <section>
-                <h2>Create Many Rows</h2>
+                <h2>Vytvoření mnoha řádků</h2>
                 <h5>Duration to create 10,000 rows</h5>
                 <div id="create-many-rows-chart-container"></div>
             </section>
@@ -154,32 +155,34 @@
         </section>
         <section>
             <section>
-                <h2>Advantages</h2>
+                <h2>Výhody</h2>
                 <ul>
-                    <li class="fragment">Very Small Size</li>
-                    <li class="fragment">Easy to Understand <br>and Develop Applications</li>
-                    <li class="fragment">Simple Integration</li>
-                    <li class="fragment">Detailed Documentation</li>
-                    <li class="fragment">Flexibility</li>
-                    <li class="fragment">Right to choose</li>
+                    <li class="fragment">Malá velikost</li>
+                    <li class="fragment">Jednoduchý na pochopení i vývoj</li>
+                    <li class="fragment">Snadná integrace i do existujících aplikací</li>
+                    <li class="fragment">Výborná a detailní dokumentace</li>
+                    <li class="fragment">Flexibilita</li>
+                    <li class="fragment">Volnost volby</li>
+                    <li class="fragment">Ale přitom přehledný ekosystém</li>
                 </ul>
             </section>
             <section>
-                <h2>Information</h2>
+                <h2>Další informace</h2>
                 <ul>
-                    <li>Progressive framework</li>
-                    <li>Component oriented</li>
-                    <li>Mix the best of React and Angular</li>
+                    <li>Progresivní framework</li>
+                    <li>Založený na komponentách</li>
+                    <li>Inspirace staršími frameworky, to nejlepší z Angularu i Reactu</li>
                 </ul>
             </section>
             <section>
-                <h2>Very Small Size</h2>
-                <div>jsize react + react-dom angular vue</div>
+                <h2>Opravdu malá velikost</h2>
+                <code>jsize (react + react-dom)/angular/vue/jquery</code>
+                <br>
                 <br>
                 <table>
                     <tr>
-                        <th>Name</th>
-                        <th>Size</th>
+                        <th>Framework</th>
+                        <th>Velikost</th>
                     </tr>
                     <tr>
                         <td>React + react-dom</td>
@@ -190,8 +193,10 @@
                         <td>62.2 kB (gzipped)</td>
                     </tr>
                     <tr>
-                        <td>Vue.js</td>
-                        <td>23.8 kB (gzipped)</td>
+                        <td><strong>Vue.js</strong></td>
+                        <td><strong>
+                            23.8 kB (gzipped)
+                        </strong>
                     </tr>
                     <tr>
                         <td>jquery</td>
@@ -199,8 +204,8 @@
                     </tr>
                     </table>
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Easy to Understand and Develop Applications</h2>
+            <section>
+                <h2>Jednoduchý na pochopení</h2>
                 <pre class="code"><code class="lang-html">
 &lt;template&gt;
     &lt;div class=&quot;example&quot;&gt;{{ msg }}&lt;/div&gt;
@@ -218,46 +223,44 @@
                 </code></pre>
             </section>
             <section>
-                <h2>Simple Integration</h2>
+                <h2>Snadná integrace</h2>
                 <ul>
-                    <li class="fragment">tag script (Vue.js runtime)</li>
-                    <li class="fragment">webpack</li>
-                    <li class="fragment">web components</li>
-                    <li class="fragment">browserify</li>
-                    <li class="fragment">requirejs</li>
+                    <li class="fragment">Bezproblémová koexistence několika Vue.js aplikací na jedné stránce</li>
+                    <li class="fragment">Vložení Vue.js runtime přes <code>&lt;script&gt;</code></li>
+                    <li class="fragment">Nebo přes webpack</li>
+                    <li class="fragment">příp. web components, browserify, require.js, ...</li>
                 </ul>
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Detailed Documentation</h2>
+            <section>
+                <h2>Výborná dokumentace</h2>
                 <img src="static/images/doc.png" alt="">
             </section>
             <section>
-                <h2>Flexibility</h2>
+                <h2>Flexibilita</h2>
                 <ul>
-                    <li class="fragment">Write your template in an HTML file</li>
-                    <li class="fragment">Write your template in a string in a Javascript file</li>
-                    <li class="fragment">Use JSX in a Javascript file</li>
-                    <li class="fragment">Make your template in pure Javascript using virtual nodes</li>
+                    <li class="fragment">Template lze napsat v samostatném HTML souroru</li>
+                    <li class="fragment">nebo jako string v JavaScriptovém souboru</li>
+                    <li class="fragment">nebo pomocí JSX jako v Reactu</li>
+                    <li class="fragment">nebo pomocí čistého Javascriptu za využití virtual nodů (<code>render</code> funkce)</li>
                 </ul>
                 <p class="fragment">
-                    This flexibility makes it easy to switch to Vue because React developers,
-                    Angular developers, or developers new to JS frameworks would all find Vue’s design familiar.
+                    Zjednodušuje přechod na Vue, protože vývojáři zvyklí na React/Angular mohou nadále používat to, na co jsou zvyklí.
                 </p>
             </section>
             <section>
-                <h2>Right to choose</h2>
+                <h2>Volnost volby</h2>
                 <ul>
                     <li class="fragment">
                         Template
                         <ul>
-                            <li>html binding</li>
+                            <li>normální html</li>
                             <li>jsx</li>
                             <li>jade</li>
                         </ul>
                     </li>
 
                     <li class="fragment">
-                        Component class
+                        Definice komponent
                         <ul>
                             <li>es5</li>
                             <li>es6 / es7</li>
@@ -267,41 +270,50 @@
                     </li>
                 </ul>
             </section>
+            <section>
+                <h2>Přehledný ekosystém</h2>
+                <p>Základní pluginy vyvíjí core team.</p>
+                <ul>
+                    <li class="fragment">State management (<code>vuex</code>)</li>
+                    <li class="fragment">Routing (<code>vue-router</code>)</li>
+                    <li class="fragment">Scaffolding (<code>vue-cli</code>)</li>
+                </ul>
+            </section>
         </section>
         <section>
-            <h2>Ecosystem</h2>
+            <h2>Ekosystém</h2>
             <table class="ecosystem">
                 <tr>
-                    <th>Project</th>
-                    <th>Description</th>
+                    <th>Projekt</th>
+                    <th>Co dělá?</th>
                 </tr>
                 <tr>
                     <td><a class="ecosystem__link" href="https://github.com/vuejs/vue-router">vue-router</a></td>
-                    <td>Single-page application routing</td>
+                    <td>SPA routing</td>
                 </tr>
                 <tr>
                     <td><a class="ecosystem__link" href="https://github.com/vuejs/vuex">vuex</a></td>
-                    <td>Large-scale state management</td>
+                    <td>State management</td>
                 </tr>
                 <tr>
                     <td><a class="ecosystem__link" href="https://github.com/vuejs/vue-cli">vue-cli</a></td>
-                    <td>Project scaffolding</td>
+                    <td>Scaffolding</td>
                 </tr>
                 <tr>
                     <td><a class="ecosystem__link" href="https://github.com/vuejs/vue-loader">vue-loader</a></td>
-                    <td>Single File Component (<code>*.vue</code> file) loader for webpack</td>
+                    <td>Single File Component (<code>*.vue</code>) loader pro webpack</td>
                 </tr>
                 <tr>
                     <td><a class="ecosystem__link" href="https://github.com/vuejs/vue/tree/dev/packages/vue-server-renderer">vue-server-renderer</a></td>
-                    <td>Server-side rendering support</td>
+                    <td>Server-side rendering</td>
                 </tr>
                 <tr>
                     <td><a class="ecosystem__link" href="https://github.com/vuejs/vue-class-component">vue-class-component</a></td>
-                    <td>TypeScript decorator for a class-based API</td>
+                    <td>TypeScript dekorátor pro definici komponent</td>
                 </tr>
                 <tr>
                     <td><a class="ecosystem__link" href="https://github.com/vuejs/vue-rx">vue-rx</a></td>
-                    <td>RxJS integration</td>
+                    <td>RxJS integrace</td>
                 </tr>
                 <tr>
                     <td><a class="ecosystem__link" href="https://github.com/vuejs/vue-devtools">vue-devtools</a></td>
@@ -309,19 +321,12 @@
                 </tr>
             </table>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Native app</h2>
-            <ul>
-                <li>NativeScript with Vue.js</li>
-                <li>Weex - Mobile cross-platform UIs</li>
-            </ul>
-        </section>
-        <section data-background-color="#ffffff">
+        <section>
             <h2>Server-side Rendering (SSR)</h2>
             <img src="static/images/nuxt.png" alt="">
         </section>
         <section>
-            <h2>Who is using it?</h2>
+            <h2>Kdo to používá?</h2>
             <ul>
                 <li>GitLab</li>
                 <li>NativeScript</li>
@@ -331,51 +336,52 @@
         </section>
         <section>
             <section>
-                <h2>How it works?</h2>
+                <h2>Jak Vue.js funguje?</h2>
             </section>
-            <section data-background-color="#ffffff">
+            <section>
                 <img src="static/images/MVVM.png" alt="">
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Components</h2>
+            <section>
+                <h2>Komponenty</h2>
                 <img src="static/images/components.png" alt="">
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Lifecycle</h2>
+            <section>
+                <h2>Životní cyklus</h2>
                 <img src="static/images/lifecycle.png" alt="">
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Reactivity</h2>
+            <section>
+                <h2>Reaktivita</h2>
                 <img src="static/images/reactivity.png" alt="">
             </section>
         </section>
         <section>
             <section>
-                <h2>Interpolations</h2>
+                <h2>Interpolace</h2>
             </section>
-            <section data-background-color="#ffffff">
+            <section>
                 <h2>Text</h2>
                 <pre class="code"><code class="lang-html">
 &lt;span&gt;Message: {{ msg }}&lt;/span&gt;
 &lt;span v-once&gt;This will never change: {{ msg }}&lt;/span&gt;
                 </code></pre>
             </section>
-            <section data-background-color="#ffffff">
+            <section>
                 <h2>Raw HTML</h2>
                 <pre class="code"><code class="lang-html">
 &lt;p&gt;Using mustaches: {{ rawHtml }}&lt;/p&gt;
 &lt;p&gt;Using v-html directive: &lt;span v-html="rawHtml"&gt;&lt;/span&gt;&lt;/p&gt;
                 </code></pre>
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Attributes</h2>
+            <section>
+                <h2>Atributy</h2>
                 <pre class="code"><code class="lang-html">
 &lt;div v-bind:id="dynamicId"&gt;&lt;/div&gt;
+
 &lt;button v-bind:disabled="isButtonDisabled"&gt;Button&lt;/button&gt;
                 </code></pre>
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Using JavaScript Expressions</h2>
+            <section>
+                <h2>JavaScriptové výrazy</h2>
                 <pre class="code"><code class="lang-html">
 {{ number + 1 }}
 {{ ok ? 'YES' : 'NO' }}
@@ -384,39 +390,42 @@
                 </code></pre>
             </section>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Directives</h2>
+        <section>
+            <h2>Direktivy</h2>
             <div class="row">
                 <div class="col-md-6">
                     <h5>v-bind</h5>
+                    <small>Binding HTML atributů</small>
                     <pre class="code"><code class="lang-html">
-&lt;!-- full syntax --&gt;
+&lt;!-- plná syntaxe --&gt;
 &lt;a v-bind:href="url"&gt;&lt;/a&gt;
-&lt;!-- shorthand --&gt;
+&lt;!-- zkratka --&gt;
 &lt;a :href="url"&gt;&lt;/a&gt;
                     </code></pre>
                 </div>
                 <div class="col-md-6">
                     <h5>v-on</h5>
+                    <small>Binding DOM eventů</small>
                     <pre class="code"><code class="lang-html">
-&lt;!-- full syntax --&gt;
+&lt;!-- plná syntaxe --&gt;
 &lt;a v-on:click="doMethod"&gt;&lt;/a&gt;
-&lt;!-- shorthand --&gt;
+&lt;!-- zkratka --&gt;
 &lt;a @click="doMethod"&gt;&lt;/a&gt;
                     </code></pre>
                 </div>
             </div>
-            <h5>Modifiers</h5>
+            <h5>Modifikátory</h5>
             <pre class="code"><code class="lang-html">
-&lt;form v-on:submit.prevent="onSubmit"&gt; ... &lt;/form&gt;
+&lt;form @submit.prevent="onSubmit"&gt; ... &lt;/form&gt;
             </code></pre>
         </section>
         <section>
             <section>
-                <h2>Computed Properties and Watchers</h2>
+                <h2>Vypočítané properties a watchery</h2>
             </section>
-            <section data-background-color="#ffffff">
+            <section>
                 <h2>Watch</h2>
+                <small>Podobně jako v Angularu, při změně proměnné zavolá funkci, která může udělat cokoli.</small>
                 <pre class="code"><code class="lang-javascript">
 var vm = new Vue({
   el: '#demo',
@@ -436,8 +445,9 @@ var vm = new Vue({
 })
                 </code></pre>
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Computed</h2>
+            <section>
+                <h2>Vypočítanné proměnné</h2>
+                <small>Deklarace proměnné na základě její závislosti na jiných proměnných, automatická reaktivita.</small>
                 <pre class="code"><code class="lang-html">
 &lt;div id="demo"&gt;{{ fullName }}&lt;/div&gt;
                 </code></pre>
@@ -456,8 +466,9 @@ var vm = new Vue({
 })
             </code></pre>
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Computed Setter</h2>
+            <section>
+                <h2>Settery vypočítaných proměnných</h2>
+                <small>Vypočítaná proměnná může mít i setter, který se zavolá, když do ni někdo zkusí něco přiřadit.</small>
                 <pre class="code"><code class="lang-javascript">
 //...
 computed: {
@@ -478,31 +489,36 @@ computed: {
             </code></pre>
             </section>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Binding HTML Classes</h2>
+        <section>
+            <h2>Bindingy pro <code>class</code></h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <pre class="code"><code class="lang-html">
+&lt;!-- &lt;div class="active"&gt;&lt;/div&gt; --&gt;
 &lt;div :class="{
   'active': isActive,
-  'text-danger': HasError
+  'text-danger': hasError
 }"&gt;
+&lt;/div&gt;
+&lt;!-- &lt;div class=&quot;default a-class-name&quot;&gt;&lt;/div&gt; --&gt;
+&lt;div :class=&quot;['default', arbitrary]&quot;&gt;
 &lt;/div&gt;
                     </code></pre>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <pre class="code"><code class="lang-javascript">
 //...
 data: {
   isActive: true,
-  hasError: false
+  hasError: false,
+  arbitrary: 'a-class-name'
 }
                     </code></pre>
                 </div>
             </div>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Conditional Rendering</h2>
+        <section>
+            <h2>Podmíněný rendering</h2>
             <pre class="code"><code class="lang-html">
 &lt;div v-if=&quot;type === 'A'&quot;&gt;A&lt;/div&gt;
 &lt;div v-else-if=&quot;type === 'B'&quot;&gt;B&lt;/div&gt;
@@ -510,11 +526,12 @@ data: {
 &lt;div v-else&gt;Not A/B/C&lt;/div&gt;
             </code></pre>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Loops</h2>
+        <section>
+            <h2>Cykly</h2>
             <pre class="code"><code class="lang-html">
 &lt;ul id=&quot;example-1&quot;&gt;
-  &lt;li v-for=&quot;item in items&quot;&gt;{{ item.message }}&lt;/li&gt;
+  &lt;!-- Použít :key se doporučuje pro lepší výkon. --&gt;
+  &lt;li v-for=&quot;item in items&quot; :key=&quot;item.message&quot;&gt;{{ item.message }}&lt;/li&gt;
 &lt;/ul&gt;
             </code></pre>
 
@@ -530,11 +547,11 @@ var example1 = new Vue({
 })
             </code></pre>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Method Event Handlers</h2>
+        <section>
+            <h2>Event handlery</h2>
             <pre class="code"><code class="lang-html">
 &lt;div id=&quot;example-2&quot;&gt;
-  &lt;button v-on:click=&quot;greet&quot;&gt;Greet&lt;/button&gt;
+  &lt;button @click=&quot;greet&quot;&gt;Greet&lt;/button&gt;
 &lt;/div&gt;
             </code></pre>
 
@@ -545,84 +562,91 @@ var example2 = new Vue({
     name: 'Vue.js'
   },
   methods: {
-    greet: function (event) {
-      // `this` inside methods points to the Vue instance
+    greet(event) {
+      // `this` ukazuje na instanci Vue komponenty
     }
   }
 })
             </code></pre>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Form Input Bindings</h2>
+        <section>
+            <h2>Binding pro inputy formulářů</h2>
+            <small><code>v-model</code> umožňuje obousměrný binding známý z Angularu</small>
             <pre class="code"><code class="lang-html">
 &lt;input v-model=&quot;message&quot; placeholder=&quot;edit me&quot;&gt;
 &lt;p&gt;Message is: {{ message }}&lt;/p&gt;
             </code></pre>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Event & Key Modifiers</h2>
+        <section>
+            <h2>Modifikátory kláves</h2>
             <pre class="code"><code class="lang-html">
-&lt;!-- the click event's propagation will be stopped --&gt;
+&lt;!-- propagace click eventu se zastaví automaticky --&gt;
 &lt;a @click.stop=&quot;oThis&quot;&gt;&lt;/a&gt;
-&lt;!-- the submit event will no longer reload the page --&gt;
+&lt;!-- submit event nezpůsobí reload stránky --&gt;
 &lt;form @submit.prevent=&quot;onSubmit&quot;&gt;&lt;/form&gt;
-&lt;!-- modifiers can be chained --&gt;
+&lt;!-- modifikátory lze řetězit --&gt;
 &lt;a @click.stop.prevent=&quot;doThat&quot;&gt;&lt;/a&gt;
-&lt;!-- also available .tab, .delete, .esc, .space, ...--&gt;
+&lt;!-- k dispozici je mnoho dalších modifikátorů: .tab, .delete, .esc, .space, ... --&gt;
 &lt;input @keyup.enter=&quot;submit&quot;&gt;
             </code></pre>
         </section>
-        <section data-background-color="#ffffff">
-            <h2>Component structure</h2>
+        <section>
+            <h2>Struktura komponenty</h2>
             <pre class="code"><code class="lang-javascript">
 export default {
-    name: 'RangeSlider',
-    mixins: [], // share common functionality with component mixins
-    extends: {}, // compose new components
-    props: {}, // component properties/variables
-    data() {}, // variables
-    computed: {},
-    components: {}, // when component uses other components
-    watch: {}, // watch wariables
-    methods: {}, // methods
-    // component Lifecycle hooks
-    beforeCreate() {},
-    created() {},
-    beforeMount() {},
-    mounted() {},
-    beforeUpdate() {},
-    updated() {},
-    activated() {},
-    deactivated() {},
-    beforeDestroy() {},
-    destroyed() {},
+    name: 'RangeSlider', // název
+    mixins: [], // mixiny umožňují sdílet funkcionalitu
+    extends: {}, // kompozice nových komponent
+    props: {}, // vstupní proměnné, lze definovat i typovou kontrolu
+    data() {}, // lokální proměnné komponenty
+    computed: {}, // reaktivní vypočítané proměnné
+    components: {}, // registrace child komponent, které tato komponenta také využívá
+    watch: {}, // definice watcherů
+    methods: {}, // deffinice metod
+
+    // lifecycle hooky
+    beforeCreate() {}, // před vytvořením komponenty
+    created() {}, // po tom co je komponenta vytvořena
+    beforeMount() {}, // před připojením komponenty na DOM element
+    mounted() {}, // po připojení na DOM element
+    beforeUpdate() {}, // před aktualizací datového modelu
+    updated() {},   // po aktualizaci datového modelu
+    activated() {}, // advanced stuff
+    deactivated() {}, // advanced stuff
+    beforeDestroy() {}, // před odstraněním komponenty z DOMu
+    destroyed() {}, // po odstranění komponenty z DOMu
     errorCaptured() {},
+    serverPrefetch() {}, // pro načtení async dat při SSR
 };
             </code></pre>
         </section>
-        <section class="etc">
-            <h2>Etc...</h2>
-            <a class="etc__link" href="https://vuejs.org/v2/guide/">https://vuejs.org/v2/guide/</a>
+        <section>
+            <h2>Další věci ...</h2>
+            <a href="https://vuejs.org/v2/guide/">https://vuejs.org/v2/guide/</a>
         </section>
         <section>
             <section>
-                <h2>What is Vuex?</h2>
+                <h2>Vuex?</h2>
             </section>
-            <section data-background-color="#ffffff">
-                <h2>What is a "State Management Pattern"?</h2>
-                <img src="static/images/vuex.png" alt="">
+            <section>
+                <h2>State Management Pattern?</h2>
+                <small>Inspirace Reduxem známým z Reactu</small>
+                <img style="max-height: 50vh;" src="static/images/vuex.png" alt="">
             </section>
-            <section data-background-color="#ffffff">
-                <h2>Shared state</h2>
-                <img style="height: 70vh;" src="static/images/vuex-shared.png" alt="">
+            <section>
+                <h2>Sdílený stav</h2>
+                <small>Komponenty používají jeden store ~ single source of truth</small>
+                <img style="max-height: 50vh;" src="static/images/vuex-shared.png" alt="">
             </section>
-        </section>
-        <section data-background-color="#ffffff">
-            <h2>Dev tools</h2>
-            <img style="height: 70vh;" src="static/images/devtool.png" alt="">
         </section>
         <section>
-            <h1>Thanks</h1>
+            <h2>Dev tools</h2>
+            <small>Extension pro Chrome</small>
+            <img style="height: 50vh;" src="static/images/devtool.png" alt="">
+        </section>
+        <section>
+            <h1>Díky za pozornost</h1>
+            <h2>Čas na Q&amp;As</h2>
         </section>
     </div>
 </div>

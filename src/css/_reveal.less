@@ -1,22 +1,37 @@
 @import "variables";
 
 section.has-light-background {
+  background: @dark-background;
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    color: @dark-background;
+    color: @dark-background-header-color;
   }
 }
 
 body {
-  background: @dark-background;
+  background: @light-background;
   font-family: @font-family;
+  color: @light-background-body-color;
 }
 
 .reveal {
+  font-family: @font-family;
+
+  a {
+    color: @link-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: @link-color-hover;
+      text-decoration: none;
+    }
+  }
+
   h1,
   h2,
   h3,
@@ -24,11 +39,13 @@ body {
   h5,
   h6 {
     margin: 0 0 20px 0;
-    color: @header-color;
+    color: @light-background-header-color;
     line-height: 1.2;
     letter-spacing: normal;
     text-shadow: none;
     word-wrap: break-word;
+    font-family: @header-font-family;
+    text-transform: none;
   }
 
   .controls {
