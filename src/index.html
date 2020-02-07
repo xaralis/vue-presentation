@@ -42,7 +42,7 @@
                 <h2>Úplně základní informace o Vue.js</h2>
                 <ul>
                     <li>JS frontendový framework</li>
-                    <li>Mladší než React a Angular</li>
+                    <li>O trochu mladší než React a Angular(JS)</li>
                     <li>O hodně mladší než jQuery</li>
                 </ul>
             </section>
@@ -98,7 +98,7 @@
                 <ul>
                     <li>Progresivní framework (bindingy pomocí rozšíření HTML syntaxe)</li>
                     <li>Založený na komponentách</li>
-                    <li>Inspirace staršími frameworky, převzal to nejlepší z Angularu i Reactu</li>
+                    <li>Inspirace staršími frameworky, převzal to nejlepší z AngularJS i Reactu</li>
                 </ul>
             </section>
             <section>
@@ -153,8 +153,8 @@
                 <ul>
                     <li class="fragment">Bezproblémová koexistence několika Vue.js aplikací na jedné stránce</li>
                     <li class="fragment">Vložení Vue.js runtime přes <code>&lt;script&gt;</code></li>
-                    <li class="fragment">Nebo přes webpack</li>
-                    <li class="fragment">... web components, browserify, require.js, ...</li>
+                    <li class="fragment">Nebo pomocí Webpack, ...</li>
+                    <li class="fragment">... Web components, Browserify, Require.js, ...</li>
                 </ul>
             </section>
             <section>
@@ -164,9 +164,9 @@
             <section>
                 <h2>Flexibilita</h2>
                 <ul>
-                    <li class="fragment">Template lze napsat v samostatném HTML souroru</li>
-                    <li class="fragment">nebo jako string v JS souboru</li>
-                    <li class="fragment">nebo pomocí JSX jako v Reactu</li>
+                    <li class="fragment">Template lze psát v samostatných HTML souborech,</li>
+                    <li class="fragment">nebo jako string v JS souboru,</li>
+                    <li class="fragment">nebo pomocí JSX jako v Reactu,</li>
                     <li class="fragment">nebo pomocí čistého JS za využití virtual nodů (<code>render</code> funkce)</li>
                 </ul>
                 <p class="fragment"><em>
@@ -287,7 +287,8 @@
             </section>
             <section>
                 <h2>Reaktivita</h2>
-                <img src="static/images/reactivity.png" alt="">
+                <small>Funguje na principů getterů/setterů, což nelze nashimovat → nepodporuje IE8</small>
+                <img style="max-height: 40vh;" src="static/images/reactivity.png" alt="">
             </section>
         </section>
         <section data-background-color="#ea272e">
@@ -301,6 +302,7 @@
             <section>
                 <h2>Jednoduchý text</h2>
                 <pre class="code"><code class="lang-html">
+&lt;!-- &lt;span&gt;Message&lt;/span&gt; --&gt;
 &lt;span&gt;Message: {{ msg }}&lt;/span&gt;
 &lt;span v-once&gt;This will never change: {{ msg }}&lt;/span&gt;
                 </code></pre>
@@ -314,6 +316,7 @@
             <section>
                 <h2>Binding atributů</h2>
                 <pre class="code"><code class="lang-html">
+&lt;!-- &lt;div id=&quot;someId&quot;&gt;&lt;/div&gt; --&gt;
 &lt;div v-bind:id="dynamicId"&gt;&lt;/div&gt;
 &lt;button v-bind:disabled="isButtonDisabled"&gt;Button&lt;/button&gt;
                 </code></pre>
@@ -333,7 +336,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h5>v-bind</h5>
-                    <small>Binding HTML atributů</small>
+                    <small>Binding HTML atributů<br>nastaví atribut v DOM</small>
                     <pre class="code"><code class="lang-html">
 &lt;!-- plná syntaxe --&gt;
 &lt;a v-bind:href="url"&gt;&lt;/a&gt;
@@ -343,7 +346,7 @@
                 </div>
                 <div class="col-md-6">
                     <h5>v-on</h5>
-                    <small>Binding DOM eventů</small>
+                    <small>Binding DOM eventů<br>při triggeru eventu zavolá VM funkci</small>
                     <pre class="code"><code class="lang-html">
 &lt;!-- plná syntaxe --&gt;
 &lt;a v-on:click="doMethod"&gt;&lt;/a&gt;
@@ -363,7 +366,7 @@
             </section>
             <section>
                 <h2>Watch</h2>
-                <small>Podobně jako v Angularu, při změně proměnné zavolá funkci, která může udělat cokoli.</small>
+                <small>Podobně jako v Angularu, při změně proměnné zavolá funkci</small>
                 <pre class="code"><code class="lang-javascript">
 var vm = new Vue({
   el: '#demo',
@@ -457,6 +460,7 @@ data: {
         </section>
         <section>
             <h2>Podmíněný rendering</h2>
+            <small>Render kusu šablony pouze pokud je splněna podmínka</small>
             <pre class="code"><code class="lang-html">
 &lt;div v-if=&quot;type === 'A'&quot;&gt;A&lt;/div&gt;
 &lt;div v-else-if=&quot;type === 'B'&quot;&gt;B&lt;/div&gt;
@@ -468,8 +472,7 @@ data: {
             <h2>Cykly</h2>
             <pre class="code"><code class="lang-html">
 &lt;ul id=&quot;example-1&quot;&gt;
-  &lt;!-- :key se doporučuje pro lepší výkon a menší šanci udělat chybu --&gt;
-  &lt;li v-for=&quot;item in items&quot; :key=&quot;item.message&quot;&gt;{{ item.message }}&lt;/li&gt;
+  &lt;li v-for=&quot;item in items&quot;&gt;{{ item.message }}&lt;/li&gt;
 &lt;/ul&gt;
             </code></pre>
 
@@ -529,28 +532,25 @@ var example2 = new Vue({
             </code></pre>
         </section>
         <section>
-            <h2>Struktura komponenty</h2>
+            <h2>Základní struktura komponenty</h2>
             <pre class="code"><code class="lang-javascript">
 export default {
     name: 'RangeSlider', // název
     mixins: [], // mixiny umožňují sdílet funkcionalitu
-    extends: {}, // kompozice nových komponent
     props: {}, // vstupní proměnné, lze definovat i typovou kontrolu
     data() {}, // lokální proměnné komponenty
     computed: {}, // reaktivní vypočítané proměnné
-    components: {}, // registrace child komponent, které tato komponenta také využívá
+    components: {}, // registrace child komponent, které tato komponenta využívá
     watch: {}, // definice watcherů
-    methods: {}, // deffinice metod
+    methods: {}, // definice metod
 
-    // lifecycle hooky
+    // základní lifecycle hooky
     beforeCreate() {}, // před vytvořením komponenty
     created() {}, // po tom co je komponenta vytvořena
     beforeMount() {}, // před připojením komponenty na DOM element
     mounted() {}, // po připojení na DOM element
     beforeUpdate() {}, // před aktualizací datového modelu
     updated() {},   // po aktualizaci datového modelu
-    activated() {}, // advanced stuff
-    deactivated() {}, // advanced stuff
     beforeDestroy() {}, // před odstraněním komponenty z DOMu
     destroyed() {}, // po odstranění komponenty z DOMu
     errorCaptured() {},

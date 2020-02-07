@@ -54,7 +54,7 @@ Highcharts.chart('star-chart-container', {
   },
   series: [
     {
-      name: 'react',
+      name: 'React',
       color: '#60dbfb',
       data: [
         [Date.UTC(2013, 10, 19), 2610],
@@ -80,7 +80,7 @@ Highcharts.chart('star-chart-container', {
       ],
     },
     {
-      name: 'angular',
+      name: 'Angular',
       color: '#de0032',
       data: [
         [Date.UTC(2015, 3, 22), 2280],
@@ -105,7 +105,7 @@ Highcharts.chart('star-chart-container', {
       ],
     },
     {
-      name: 'Vue.JS',
+      name: 'Vue.js',
       color: '#41b882',
       data: [
         [Date.UTC(2014, 11, 1), 2610],
