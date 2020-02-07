@@ -109,25 +109,25 @@
                 <table>
                     <tr>
                         <th>Framework</th>
-                        <th>Velikost</th>
+                        <th>Velikost (gzipped)</th>
                     </tr>
                     <tr>
                         <td><strong>Vue.js</strong></td>
                         <td><strong>
-                            23.8 kB (gzipped)
+                            23.8 kB
                         </strong>
                     </tr>
                     <tr>
                         <td>jquery</td>
-                        <td>31.1 kB (gzipped)</td>
+                        <td>31.1 kB</td>
                     </tr>
                     <tr>
                         <td>React + react-dom</td>
-                        <td>34.4 kB (gzipped)</td>
+                        <td>34.4 kB</td>
                     </tr>
                     <tr>
                         <td>Angular</td>
-                        <td>62.2 kB (gzipped)</td>
+                        <td>62.2 kB</td>
                     </tr>
                     </table>
             </section>
@@ -346,7 +346,7 @@
                 </div>
                 <div class="col-md-6">
                     <h5>v-on</h5>
-                    <small>Binding DOM eventů<br>při triggeru eventu zavolá VM funkci</small>
+                    <small>Binding DOM eventů<br>při triggeru eventu zavolá funkci</small>
                     <pre class="code"><code class="lang-html">
 &lt;!-- plná syntaxe --&gt;
 &lt;a v-on:click="doMethod"&gt;&lt;/a&gt;
@@ -409,7 +409,7 @@ var vm = new Vue({
             </section>
             <section>
                 <h2>Settery vypočítaných proměnných</h2>
-                <small>Vypočítaná proměnná může mít i setter, který se zavolá, když do ni někdo zkusí něco přiřadit.</small>
+                <small>Vypočítaná proměnná může mít i setter, který se zavolá, když se do ní něco přiřadí.</small>
                 <pre class="code"><code class="lang-javascript">
 //...
 computed: {
@@ -522,13 +522,13 @@ var example2 = new Vue({
             <h2>Modifikátory kláves</h2>
             <pre class="code"><code class="lang-html">
 &lt;!-- propagace click eventu se zastaví automaticky --&gt;
-&lt;a @click.stop=&quot;oThis&quot;&gt;&lt;/a&gt;
+&lt;a @click.stop=&quot;onClick&quot;&gt;&lt;/a&gt;
 &lt;!-- submit event nezpůsobí reload stránky --&gt;
 &lt;form @submit.prevent=&quot;onSubmit&quot;&gt;&lt;/form&gt;
 &lt;!-- modifikátory lze řetězit --&gt;
 &lt;a @click.stop.prevent=&quot;doThat&quot;&gt;&lt;/a&gt;
 &lt;!-- k dispozici je mnoho dalších modifikátorů: .tab, .delete, .esc, .space, ... --&gt;
-&lt;input @keyup.enter=&quot;submit&quot;&gt;
+&lt;input @keyup.enter=&quot;onEnterKeyup&quot;&gt;
             </code></pre>
         </section>
         <section>
@@ -666,7 +666,7 @@ test:unit           run unit tests with jest
             <h2>DevTools</h2>
             <small>Chrome extension pro inspekci běžící Vue aplikace</small>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <ul>
                         <li>vue-router</li>
                         <li>vuex</li>
@@ -674,7 +674,7 @@ test:unit           run unit tests with jest
                         <li>component browser</li>
                     </ul>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <img style="height: 40vh;" src="static/images/devtool.png" alt="">
                 </div>
             </div>
